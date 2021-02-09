@@ -41,36 +41,29 @@
 //}
 // 
 // Related Topics 数组 双指针 
-// 👍 1715 👎 0
+// 👍 1819 👎 0
 
+  
+  package com.huangyuanlove.leetcode;
+  public class RemoveDuplicatesFromSortedArray_26{
+      public static void main(String[] args) {
+           Solution solution = new RemoveDuplicatesFromSortedArray_26().new Solution();
+      }
+      //leetcode submit region begin(Prohibit modification and deletion)
+class Solution {
+    public int removeDuplicates(int[] nums) {
+        int length = 1;
+        for (int i =1;i<nums.length;i++){
+            if(nums[i] == nums[length-1]){
 
-package com.huangyuanlove.leetcode.editor.cn;
-
-public class RemoveDuplicatesFromSortedArray {
-    public static void main(String[] args) {
-        Solution solution = new RemoveDuplicatesFromSortedArray().new Solution();
-        int nums[] = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
-        int result = solution.removeDuplicates(nums);
-        for (int i = 0; i < result; i++) {
-            System.out.print(nums[i] + "\t");
-        }
-    }
-
-    //leetcode submit region begin(Prohibit modification and deletion)
-    class Solution {
-        public int removeDuplicates(int[] nums) {
-            int length = 1;
-            for (int i = 1; i < nums.length; i++) {
-                if (nums[i] == nums[length - 1]) {
-
-                } else {
-                    nums[length] = nums[i];
-                    length++;
-                }
+            }else{
+                nums[length] = nums[i];
+                length ++;
             }
-            return length;
         }
+        return length;
     }
+}
 //leetcode submit region end(Prohibit modification and deletion)
 
-}
+  }

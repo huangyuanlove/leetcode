@@ -19,7 +19,7 @@
 // 👍 2752 👎 0
 
 
-package com.huangyuanlove.leetcode.editor.cn;
+package com.huangyuanlove.leetcode;
 
 import java.util.ArrayList;
 import java.util.HashMap;

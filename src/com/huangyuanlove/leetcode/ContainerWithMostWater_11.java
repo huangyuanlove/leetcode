@@ -48,10 +48,10 @@
 // 👍 1984 👎 0
 
 
-package com.huangyuanlove.leetcode.editor.cn;
-public class ContainerWithMostWater{
+package com.huangyuanlove.leetcode;
+public class ContainerWithMostWater_11 {
   public static void main(String[] args) {
-       Solution solution = new ContainerWithMostWater().new Solution();
+       Solution solution = new ContainerWithMostWater_11().new Solution();
       System.out.println(solution.maxArea(new int[]{2,3,4,5,18,17,6}));
   }
   //leetcode submit region begin(Prohibit modification and deletion)
