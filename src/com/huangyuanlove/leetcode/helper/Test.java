@@ -9,17 +9,6 @@ import java.util.LinkedList;
 public class Test {
 
     public static void main(String[] args) {
-        try {
-            FileInputStream fis = new FileInputStream("/Users/huangyuan/CERT.RSA");
-            PKCS7 pkcs7 = new PKCS7(fis);
-            X509Certificate publicKey = pkcs7.getCertificates()[0];
-
-            System.out.println("issuer1:" + publicKey.getIssuerDN());
-            System.out.println("subject2:" + publicKey.getSubjectDN());
-            System.out.println(publicKey.getPublicKey());
-        }catch (Exception e){
-           e.printStackTrace();
-        }
 
 
 
@@ -31,7 +20,7 @@ public class Test {
 
 
             traverse(node.left);
-            System.out.print(node.value + "\t");
+            System.out.print(node.val + "\t");
             traverse(node.right);
         }
     }

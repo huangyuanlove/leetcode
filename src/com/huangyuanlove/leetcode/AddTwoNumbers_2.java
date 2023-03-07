@@ -43,6 +43,8 @@
 
 package com.huangyuanlove.leetcode;
 
+import com.huangyuanlove.leetcode.helper.ListNode;
+
 public class AddTwoNumbers_2 {
     public static void main(String[] args) {
         Solution solution = new AddTwoNumbers_2().new Solution();

@@ -42,6 +42,8 @@
 package com.huangyuanlove.leetcode;
 
 
+import com.huangyuanlove.leetcode.helper.ListNode;
+
 public class RemoveNthNodeFromEndOfList_19 {
     public static void main(String[] args) {
         Solution solution = new RemoveNthNodeFromEndOfList_19().new Solution();

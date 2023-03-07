@@ -37,7 +37,10 @@
 
   
   package com.huangyuanlove.leetcode;
-  public class MergeTwoSortedLists_21{
+
+import com.huangyuanlove.leetcode.helper.ListNode;
+
+public class MergeTwoSortedLists_21{
       public static void main(String[] args) {
            Solution solution = new MergeTwoSortedLists_21().new Solution();
 
