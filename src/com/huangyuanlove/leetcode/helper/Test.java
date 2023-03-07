@@ -1,17 +1,27 @@
-package leetcode.editor.cn;
+package com.huangyuanlove.leetcode.helper;
 
+import sun.security.pkcs.PKCS7;
+
+import java.io.FileInputStream;
+import java.security.cert.X509Certificate;
 import java.util.LinkedList;
 
 public class Test {
 
     public static void main(String[] args) {
+        try {
+            FileInputStream fis = new FileInputStream("/Users/huangyuan/CERT.RSA");
+            PKCS7 pkcs7 = new PKCS7(fis);
+            X509Certificate publicKey = pkcs7.getCertificates()[0];
 
-        TreeNode tree = generateTree();
+            System.out.println("issuer1:" + publicKey.getIssuerDN());
+            System.out.println("subject2:" + publicKey.getSubjectDN());
+            System.out.println(publicKey.getPublicKey());
+        }catch (Exception e){
+           e.printStackTrace();
+        }
 
-        traverse(tree);
-        System.out.println();
-        TreeNode autoTree = autoGenerate(14);
-        traverse(autoTree);
+
 
     }
 

@@ -55,7 +55,7 @@
 // 👍 2479 👎 0
 
   
-  package leetcode.editor.cn;
+  package com.huangyuanlove.leetcode;
 
 import java.util.Stack;
 

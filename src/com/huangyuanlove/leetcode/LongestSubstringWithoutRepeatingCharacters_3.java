@@ -48,8 +48,6 @@
 
 package com.huangyuanlove.leetcode;
 
-import java.util.ArrayList;
-
 public class LongestSubstringWithoutRepeatingCharacters_3 {
     public static void main(String[] args) {
         Solution solution = new LongestSubstringWithoutRepeatingCharacters_3().new Solution();

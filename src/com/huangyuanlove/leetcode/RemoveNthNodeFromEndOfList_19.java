@@ -39,7 +39,7 @@
 // 👍 1431 👎 0
 
 
-package leetcode.editor.cn;
+package com.huangyuanlove.leetcode;
 
 
 public class RemoveNthNodeFromEndOfList_19 {

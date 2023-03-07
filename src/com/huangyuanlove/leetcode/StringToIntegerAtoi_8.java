@@ -111,7 +111,7 @@
 // 👍 1135 👎 0
 
 
-package leetcode.editor.cn;
+package com.huangyuanlove.leetcode;
 
 public class StringToIntegerAtoi_8 {
     public static void main(String[] args) {

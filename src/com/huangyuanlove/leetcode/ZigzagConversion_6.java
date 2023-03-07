@@ -54,7 +54,7 @@
 // 👍 1182 👎 0
 
 
-package leetcode.editor.cn;
+package com.huangyuanlove.leetcode;
 
 public class ZigzagConversion_6 {
     public static void main(String[] args) {

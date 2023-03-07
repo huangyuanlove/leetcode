@@ -27,10 +27,9 @@
 // 👍 1856 👎 0
 
 
-package leetcode.editor.cn;
+package com.huangyuanlove.leetcode;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class GenerateParentheses_22 {

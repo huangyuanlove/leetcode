@@ -23,7 +23,7 @@
 // 👍 810 👎 0
 
 
-package leetcode.editor.cn;
+package com.huangyuanlove.leetcode;
 
 import java.util.Arrays;
 

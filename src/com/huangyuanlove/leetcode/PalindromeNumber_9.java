@@ -49,7 +49,7 @@
 // 👍 1534 👎 0
 
 
-package leetcode.editor.cn;
+package com.huangyuanlove.leetcode;
 
 public class PalindromeNumber_9 {
     public static void main(String[] args) {
