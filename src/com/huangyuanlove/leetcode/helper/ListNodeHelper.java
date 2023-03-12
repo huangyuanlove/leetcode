@@ -1,6 +1,31 @@
 package com.huangyuanlove.leetcode.helper;
 
 public class ListNodeHelper {
+    public static void main(String[] args) {
+        ListNode head = createLIstByNumber(new int[]{1,2,3,4,5,6,7});
+        printListNode(head);
+    }
+
+    public static ListNode createLIstByNumber(int[] nums){
+        ListNode head = null;
+        ListNode result =null;
+        if(nums!=null && nums.length>0){
+            for(int num : nums){
+                if(head == null){
+                    head = new ListNode(num);
+                    result = head;
+                }else{
+                    ListNode tmp = new ListNode(num);
+                    head.next = tmp;
+                    head = tmp;
+                }
+            }
+
+
+        }
+        return result;
+    }
+
     public static ListNode createDuplicatesList(){
         ListNode listNode = new ListNode(1);
 

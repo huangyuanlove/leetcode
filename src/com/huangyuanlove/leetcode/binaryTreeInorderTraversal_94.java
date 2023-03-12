@@ -22,7 +22,6 @@ public class binaryTreeInorderTraversal_94 {
     public static void inorder(TreeNode node, ArrayList<Integer> result) {
         if (node != null) {
             inorder(node.left, result);
-            System.out.println(node.val);
             result.add(node.val);
             inorder(node.right, result);
         }
