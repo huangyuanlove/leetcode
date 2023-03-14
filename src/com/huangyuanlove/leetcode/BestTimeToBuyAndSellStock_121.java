@@ -3,6 +3,7 @@ package com.huangyuanlove.leetcode;
 import com.huangyuanlove.leetcode.helper.ArrayListHelper;
 
 import java.util.Collections;
+import java.util.Map;
 
 public class BestTimeToBuyAndSellStock_121 {
     public static void main(String[] args) {
@@ -30,5 +31,17 @@ public class BestTimeToBuyAndSellStock_121 {
         }
         return maxSum;
 
+    }
+    public static int maxProfit1(int[] prices){
+        if(prices.length <=1){
+            return 0;
+        }
+        int min = prices[0];
+        int max = 0;
+        for (int i = 1; i <prices.length ; i++) {
+            max = Math.max((prices[i] - min), max);
+            min = Math.min(prices[i],min);
+        }
+        return max;
     }
 }
