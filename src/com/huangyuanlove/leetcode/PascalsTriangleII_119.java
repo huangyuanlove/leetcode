@@ -11,7 +11,6 @@ public class PascalsTriangleII_119 {
             List<Integer> result = getRow(0);
         ArrayListHelper.printList(result);
         System.out.println("1\t9\t36\t84\t126\t126\t84\t36\t9\t1\t");
-        Integer.reverse()
     }
 
     public static List<Integer> getRow(int rowIndex) {
