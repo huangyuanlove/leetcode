@@ -1,15 +1,18 @@
 package com.huangyuanlove.leetcode;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
 public class PascalsTriangle_118 {
 
     public static void main(String[] args) {
-        List<List<Integer>> result = generate(6);
+        DecimalFormat df = new DecimalFormat("    ");
+        List<List<Integer>> result = generate(10);
         for (int i = 0; i < result.size(); i++) {
             for (int j = 0; j < result.get(i).size(); j++) {
-                System.out.print(result.get(i).get(j) +" " );
+                String str2 = df.format(result.get(i).get(j));
+                System.out.print(str2 +"\t" );
             }
             System.out.println();
         }
