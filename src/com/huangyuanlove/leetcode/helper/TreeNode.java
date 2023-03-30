@@ -2,8 +2,10 @@ package com.huangyuanlove.leetcode.helper;
 
 public class TreeNode {
    public int val;
-   public TreeNode right;
-   public TreeNode left;
+    public TreeNode left;
+    public TreeNode right;
+
+   public boolean hasProcessLeft = false;
 
     public TreeNode() {
     }
