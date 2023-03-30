@@ -5,7 +5,7 @@ import com.huangyuanlove.leetcode.helper.TreeNodeHelper;
 
 public class MaximumDepthOfBinaryTree_104 {
     public static void main(String[] args) {
-        TreeNode root = TreeNodeHelper.createBTree();
+        TreeNode root =TreeNodeHelper.createBinaryTreeByLevel(new Integer[]{1,2,3,null,4,null,5,6});
         System.out.println(maxDepth(root));
 
     }

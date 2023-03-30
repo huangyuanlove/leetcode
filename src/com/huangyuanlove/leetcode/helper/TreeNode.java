@@ -6,6 +6,7 @@ public class TreeNode {
     public TreeNode right;
 
    public boolean hasProcessLeft = false;
+   public boolean hasPrecessRight = false;
 
     public TreeNode() {
     }
