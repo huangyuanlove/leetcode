@@ -9,20 +9,36 @@ public class PathSum_112 {
     public static void main(String[] args) {
 
 
-        TreeNode root = TreeNodeHelper.createBinaryTreeByLevel(new Integer[]{5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, 1});
-        visit(root);
+        TreeNode root = TreeNodeHelper.createBinaryTreeByLevel(new Integer[]{1,2,3});
+//        TreeNode root = TreeNodeHelper.createBinaryTreeByLevel(new Integer[]{5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, 1});
+        System.out.println(hasPathSum(root, 5));
+
 
     }
 
     public static boolean hasPathSum(TreeNode root, int targetSum) {
-        return false;
+        if (root == null && targetSum == 0) {
+
+            return true;
+        }
+        if (root == null && targetSum != 0) {
+
+            return false;
+        }
+        System.out.println("root.val->" + root.val + "  targetSum->" + targetSum);
+
+        if (root.left == null && root.right == null && targetSum == root.val) {
+
+            return true;
+        }
+        if (root.left == null && root.right == null) {
+
+            return false;
+        }
+
+        return hasPathSum(root.left, targetSum - root.val) || hasPathSum(root.right, targetSum - root.val);
+
     }
 
-    public static void visit(TreeNode node) {
-        if (node != null) {
-            System.out.println(node.val);
-            visit(node.left);
-            visit(node.right);
-        }
-    }
+
 }
