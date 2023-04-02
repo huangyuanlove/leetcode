@@ -8,21 +8,21 @@ public class ArrayListHelper {
     public static void printList(List list){
 
         for (int i = 0; i < list.size(); i++) {
-            System.out.print(list.get(i).toString() +"  ");
+            System.out.print(list.get(i).toString() +" | ");
         }
         System.out.println();
     }
     public static <T>void printList(T [] list){
 
         for (int i = 0; i < list.length; i++) {
-            System.out.print(list[i].toString() +"  ");
+            System.out.print(list[i].toString() +" | ");
         }
         System.out.println();
     }
     public static void printList(int [] list){
 
         for (int i = 0; i < list.length; i++) {
-            System.out.print(list[i] +"  ");
+            System.out.print(list[i] +" | ");
         }
         System.out.println();
     }
