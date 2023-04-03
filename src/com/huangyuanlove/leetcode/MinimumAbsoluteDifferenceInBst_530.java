@@ -8,7 +8,14 @@ public class MinimumAbsoluteDifferenceInBst_530 {
     }
     int diff = Integer.MAX_VALUE;
     int pre = -1;
+
+
     public  int getMinimumDifference(TreeNode root) {
+        visit(root);
+        return diff;
+
+    }
+    public void visit(TreeNode root){
         if(root!=null){
             getMinimumDifference(root.left);
             if(pre ==-1){
@@ -18,8 +25,5 @@ public class MinimumAbsoluteDifferenceInBst_530 {
             }
             getMinimumDifference(root.right);
         }
-
-
-
     }
 }
