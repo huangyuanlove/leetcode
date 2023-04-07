@@ -8,7 +8,12 @@ public class ArrayListHelper {
     public static void printList(List list){
 
         for (int i = 0; i < list.size(); i++) {
-            System.out.print(list.get(i).toString() +" | ");
+            if(list.get(i) == null){
+                System.out.print("null | ");
+            }else{
+                System.out.print(list.get(i).toString() +" | ");
+
+            }
         }
         System.out.println();
     }
