@@ -14,12 +14,13 @@ public class MaximumAverageSubarray_i_643 {
         for (int i = 0; i < k; i++) {
             sum += nums[i];
         }
-        System.out.println(sum);
+        int preSum = sum;
 
-        for (int i = 1; i < nums.length; i++) {
-            int tm= sum +nums[i] - nums[i-k];
+
+        for (int i = k; i < nums.length; i++) {
+            int tm= preSum +nums[i] - nums[i-k];
             sum = Math.max(tm,sum);
-            System.out.println(sum);
+            preSum = tm;
 
         }
         return  sum *1.0/k;
