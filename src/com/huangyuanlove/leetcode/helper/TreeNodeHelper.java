@@ -102,6 +102,38 @@ public class TreeNodeHelper {
             System.out.print(node.val + "\t");
             inorder(node.right);
         }
+    }
+
+    public static void levelVisit(TreeNode node){
+        LinkedBlockingQueue<TreeNode> queue = new LinkedBlockingQueue<>();
+
+
+        queue.add(node);
+        int preLevelCount = 1;
+        int currentLevelCount =0;
+
+        while (!queue.isEmpty()) {
+            TreeNode current = queue.poll();
+            System.out.print(current.val +"\t");
+            preLevelCount --;
+
+            if(current.left !=null){
+                queue.add(current.left);
+                currentLevelCount ++;
+            }
+            if(current.right!=null){
+                queue.add(current.right);
+                currentLevelCount ++;
+            }
+
+            if(preLevelCount == 0){
+
+                System.out.println();
+                preLevelCount = currentLevelCount;
+                currentLevelCount = 0;
+            }
+        }
 
     }
+
 }
