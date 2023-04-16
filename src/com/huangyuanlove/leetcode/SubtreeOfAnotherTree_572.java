@@ -10,9 +10,28 @@ public class SubtreeOfAnotherTree_572 {
         System.out.println(isSubtree(node,subNode));
     }
     public static boolean isSubtree(TreeNode root, TreeNode subRoot) {
-        return false;
+
+        if(root==null && subRoot==null){
+            return true;
+        }
+        if(root !=null && subRoot == null){
+            return false;
+        }
+        if(root == null && subRoot !=null){
+            return false;
+        }
+
+
+        return isSameTree(root,subRoot) || isSubtree(root.left,subRoot) || isSubtree(root.right,subRoot);
 
     }
+    public static  boolean isSameTree(TreeNode root,TreeNode subRoot){
+       if(root == null && subRoot ==null){
+           return true;
+       }
+       return root!=null && subRoot!=null && root.val == subRoot.val && isSameTree(root.left,subRoot.left) && isSameTree(root.right,subRoot.right);
+    }
+
 
 
 }
