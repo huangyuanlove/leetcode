@@ -9,8 +9,9 @@ import java.util.List;
 
 public class MinimumAbsoluteDifference_1200 {
     public static void main(String[] args) {
-        ArrayListHelper.printList(minimumAbsDifference(new int[]{4,2,1,3}));
+        ArrayListHelper.printList(minimumAbsDifference(new int[]{4, 2, 1, 3}));
     }
+
     public static List<List<Integer>> minimumAbsDifference(int[] arr) {
         ArrayList<List<Integer>> result = new ArrayList<>();
         Arrays.sort(arr);
@@ -19,7 +20,6 @@ public class MinimumAbsoluteDifference_1200 {
         for (int i = 0; i < arr.length-1; i++) {
             minDiff = Math.min(minDiff,arr[i+1]-arr[i]);
         }
-
         //找元素对
         int min = 0;
         int max =1;
@@ -40,7 +40,7 @@ public class MinimumAbsoluteDifference_1200 {
             }
         }
         return result;
-        
+
     }
-    
+
 }
