@@ -4,6 +4,7 @@ import com.huangyuanlove.leetcode.helper.ListNode;
 import com.huangyuanlove.leetcode.helper.Node;
 
 public class DesignLinkedList_707 {
+    //todo 待完成
 
 
     public static void main(String[] args) {
